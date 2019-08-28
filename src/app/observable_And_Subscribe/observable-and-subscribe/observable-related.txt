@@ -1,0 +1,14 @@
+
+step:1 To test our application we need Web service URL. Angular provides angular-in-memory-web-api@0.5.3
+        npm install angular-in-memory-web-api@0.5.3 --save
+
+step:2 create class (testdata.ts)
+
+step:3 created interface book.ts as observable, which includes parameters like id, name
+        (name should be there as per backend parameters)
+
+step:4 created book.service inside shared folder, in order to send request to server using http method as get()
+
+step:5 From observable-and-subscribe file getting the response from the service.ts file using observable and subscribe.
+
+step:6 Display the data from html.

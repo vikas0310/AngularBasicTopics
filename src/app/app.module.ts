@@ -15,15 +15,21 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 
+import { InMemoryWebApiModule} from 'angular-in-memory-web-api';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './canActivate/login/login.component';
+import { ObservableAndSubscribeComponent } from './observable_And_Subscribe/observable-and-subscribe/observable-and-subscribe.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TestData } from './observable_And_Subscribe/testdata';
 
 @NgModule({
   declarations: [
     AppComponent,
     AutocompleteComponent,
-    LoginComponent
+    LoginComponent,
+    ObservableAndSubscribeComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +45,9 @@ import { LoginComponent } from './canActivate/login/login.component';
     MatGridListModule,
     MatIconModule,
     MatCardModule,
+    MatListModule,
+    InMemoryWebApiModule.forRoot(TestData),
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],
