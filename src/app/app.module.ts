@@ -23,13 +23,15 @@ import { LoginComponent } from './canActivate/login/login.component';
 import { ObservableAndSubscribeComponent } from './observable_And_Subscribe/observable-and-subscribe/observable-and-subscribe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TestData } from './observable_And_Subscribe/testdata';
+import { ObservableAndAsyncComponent } from './observable_And_Subscribe/observable-and-async/observable-and-async.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AutocompleteComponent,
     LoginComponent,
-    ObservableAndSubscribeComponent
+    ObservableAndSubscribeComponent,
+    ObservableAndAsyncComponent
   ],
   imports: [
     BrowserModule,
