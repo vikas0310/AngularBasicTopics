@@ -1,0 +1,28 @@
+<mat-grid-list cols="12" rowHeight="100px">
+    <mat-grid-tile colspan="3" rowspan="4"></mat-grid-tile>
+    <mat-grid-tile colspan="6" rowspan="6">
+        <form action=""  class="formFieldsCss" [formGroup]="signUpPage">
+        <div>
+            <mat-form-field appearance="standard">
+                <mat-label> First Name</mat-label>
+                <input matInput placeholder="First Name" formControlName="firstName">
+                <mat-error *ngIf="signUpPage.get('firstName').invalid">Enter First Name</mat-error>
+            </mat-form-field>
+        <br/>
+            <mat-form-field appearance="standard">
+                <mat-label> Last Name</mat-label>
+                <input matInput placeholder="Last Name" formControlName="lastName">
+            </mat-form-field>
+            <br/>
+            <mat-form-field appearance="standard">
+                <mat-label> Password</mat-label>
+                <input matInput placeholder="Password" type="password" formControlName="userPassword">
+            </mat-form-field>
+            <br/>
+            <button mat-button class="submit-color" [disabled]="!signUpPage.valid" (click)="formSubmitted()">Submit</button>
+            <br/><br/>
+        </div>
+    </form>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="3" rowspan="4"></mat-grid-tile>
+</mat-grid-list>

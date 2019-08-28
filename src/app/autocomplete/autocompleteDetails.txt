@@ -1,0 +1,8 @@
+
+step:1 Add Angular-Material to your project using cli (ng add @angular/material)
+
+step:2 Import 'MatAutocompleteModule' to your app.module.ts file
+       import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
+step:3 In html give reference variable #auto of "mat-autocomplete" tag to input tag to [autocomplete] = "auto"
+

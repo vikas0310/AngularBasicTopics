@@ -1,0 +1,23 @@
+.top-mat-grid{
+    top: calc(50px) !important;
+}
+
+.submit-color{
+    background: #ceaa8c;
+    position: relative;
+    left: 30%;
+}
+
+.formFieldsCss{
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fbf9f9dd;
+}
+
+.mat-form-field{
+    left: 30%;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
