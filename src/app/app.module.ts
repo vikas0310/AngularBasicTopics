@@ -26,6 +26,9 @@ import { TestData } from './observable_And_Subscribe/testdata';
 import { ObservableAndAsyncComponent } from './observable_And_Subscribe/observable-and-async/observable-and-async.component';
 import { ObservableAndSubscribeWithNgIfComponent } from './observable_And_Subscribe/observable-and-subscribe-with-ng-if/observable-and-subscribe-with-ng-if.component';
 import { ObservableAndMapComponent } from './observable_And_map/observable-and-map/observable-and-map.component';
+import { UserService } from './canActivate/shared/user.service';
+import { ActivateGuard } from './canActivate/activate.guard';
+import { SignupComponent } from './canActivate/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { ObservableAndMapComponent } from './observable_And_map/observable-and-m
     ObservableAndSubscribeComponent,
     ObservableAndAsyncComponent,
     ObservableAndSubscribeWithNgIfComponent,
-    ObservableAndMapComponent
+    ObservableAndMapComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +60,7 @@ import { ObservableAndMapComponent } from './observable_And_map/observable-and-m
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ActivateGuard, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

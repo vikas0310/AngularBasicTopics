@@ -1,0 +1,18 @@
+
+An canActivate Router guard is used to tell that, we have permission for that component or not.
+
+step:1 Generate guard using command like
+       ng g g guardName---> given as activate
+
+step:2 Add the generated guard in providers inside app.module.ts file
+
+step:3 create service inside shared folder as user
+
+step:4 Add the created service in providers inside app.module.ts file
+
+step:5 Add the router path inside app-routing.module.ts file
+
+step:6 Add canActivate, to check if the current user has the permission to access that component or not.
+       For Example: In this application we given canActivate to "ObservableAndSubscribeComponent" component
+
+step:7 check user name as vikas and last name as H and password is 12345, if true, give permission to "ObservableAndSubscribeComponent" component else redirect to login

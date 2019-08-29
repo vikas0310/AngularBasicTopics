@@ -18,6 +18,8 @@ export class ObservableAndMapComponent implements OnInit {
   }
 
   getBookNameById() {
+    // in map operator if we return book, it returns whole object
+    // so to take particular parameter mention parameter name which needed. Ex: book.name
     this.bookByName = this.bookmapservice.getBookDetailsById(1).map(book => book.name);
   }
 
