@@ -1,0 +1,9 @@
+<p>observable-and-map works!</p>
+
+<div *ngIf= "bookByName|async as bkByName">
+    {{bkByName}}
+</div>
+
+<ng-template #error>
+    error occured
+</ng-template>

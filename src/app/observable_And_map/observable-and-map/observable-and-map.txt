@@ -1,0 +1,3 @@
+
+The map() operator transforms one value to another. It takes a fiven value from the observable
+streams and applies the provided transforming function to it.
