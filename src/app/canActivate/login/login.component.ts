@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   formSubmitted() {
+    sessionStorage.setItem('fName', this.signUpPage.get('firstName').value);
     this.router.navigateByUrl('/observables');
   }
 
