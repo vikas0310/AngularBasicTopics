@@ -1,0 +1,9 @@
+
+get book details by passing id to url
+
+steps:
+- Create service file which is used to define the url
+- Create URL, in order to get data of particular url by passing id
+- Create method which we need to make a request to server.
+- Call the service method  in ts file and pass the particular id to get respective data.
+- Display the values in html

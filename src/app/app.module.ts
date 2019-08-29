@@ -24,6 +24,7 @@ import { ObservableAndSubscribeComponent } from './observable_And_Subscribe/obse
 import { HttpClientModule } from '@angular/common/http';
 import { TestData } from './observable_And_Subscribe/testdata';
 import { ObservableAndAsyncComponent } from './observable_And_Subscribe/observable-and-async/observable-and-async.component';
+import { ObservableAndSubscribeWithNgIfComponent } from './observable_And_Subscribe/observable-and-subscribe-with-ng-if/observable-and-subscribe-with-ng-if.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ObservableAndAsyncComponent } from './observable_And_Subscribe/observab
     AutocompleteComponent,
     LoginComponent,
     ObservableAndSubscribeComponent,
-    ObservableAndAsyncComponent
+    ObservableAndAsyncComponent,
+    ObservableAndSubscribeWithNgIfComponent
   ],
   imports: [
     BrowserModule,

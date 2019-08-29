@@ -1,0 +1,11 @@
+<p>observable-and-subscribe-with-ng-if works!</p>
+
+<div *ngIf = "bookById|async as bk; else loading">
+    <mat-list>
+        <mat-list-item>ID is :{{bk.id}}</mat-list-item>
+        <mat-list-item>Name is :{{bk.name}}</mat-list-item>
+    </mat-list>
+</div>
+<ng-template #loading>
+<a href="../../../assets/loader.gif" style="color: black;"></a>
+</ng-template>
