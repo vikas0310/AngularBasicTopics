@@ -1,0 +1,14 @@
+
+Dynamic import in angular-8 is used to import the components dynamically
+
+step 1: Create the custom module Ex: dynamic-import.module.ts
+step 2: Create component Ex: dynamic-import.component.*
+step 3: Add the component in dynamic-import.module.ts file under declaration[]
+step 4: Add this component inside app.routing.module.ts file with loadChildren property
+
+Ex: {path: 'dynamicImport', loadChildren: () => import(`module file path`).then(m => m."module-file-name")}
+
+step 5: Create custom routing module for dynamic import
+Ex: dynamic-import-routing.module.ts file
+
+step 6: load the component here by giving path name as empty.

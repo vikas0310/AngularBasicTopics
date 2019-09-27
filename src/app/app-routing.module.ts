@@ -9,7 +9,12 @@ import { ActivateGuard } from './canActivate/activate.guard';
 const routes: Routes = [
   { path: '', component: LoginComponent},
   { path: 'signIn', component: SignupComponent},
-  { path: 'observables', component: ObservableAndSubscribeComponent, canActivate: [ActivateGuard]}
+  { path: 'observables', component: ObservableAndSubscribeComponent, canActivate: [ActivateGuard]},
+
+  // lazy loading concept as dynamic import in angular 8
+  { path: 'lazyloading',
+   loadChildren: () => import(`./dynamic-import-angular8/dynamic-import/dynamic-import.module`).then(m => m.DynamicImportModule)
+  }
 ];
 
 @NgModule({
