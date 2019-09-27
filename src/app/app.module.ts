@@ -29,6 +29,8 @@ import { ObservableAndMapComponent } from './observable_And_map/observable-and-m
 import { UserService } from './canActivate/shared/user.service';
 import { ActivateGuard } from './canActivate/activate.guard';
 import { SignupComponent } from './canActivate/signup/signup.component';
+import { CheckForDirectivesComponent } from './directive/check-for-directives/check-for-directives.component';
+import { HighlightDirective } from './directive/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { SignupComponent } from './canActivate/signup/signup.component';
     ObservableAndAsyncComponent,
     ObservableAndSubscribeWithNgIfComponent,
     ObservableAndMapComponent,
-    SignupComponent
+    SignupComponent,
+    CheckForDirectivesComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
