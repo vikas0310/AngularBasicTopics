@@ -31,6 +31,10 @@ import { ActivateGuard } from './canActivate/activate.guard';
 import { SignupComponent } from './canActivate/signup/signup.component';
 import { CheckForDirectivesComponent } from './directive/check-for-directives/check-for-directives.component';
 import { HighlightDirective } from './directive/highlight.directive';
+import { TabsRoutingDynamicallyComponent } from './tabs-routing-dynamically/tabs-routing-dynamically.component';
+import { FirstComponentComponent } from './tabs-routing-dynamically/first-component/first-component.component';
+import { SecondComponentComponent } from './tabs-routing-dynamically/second-component/second-component.component';
+import { ThirdComponentComponent } from './tabs-routing-dynamically/third-component/third-component.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { HighlightDirective } from './directive/highlight.directive';
     ObservableAndMapComponent,
     SignupComponent,
     CheckForDirectivesComponent,
-    HighlightDirective
+    HighlightDirective,
+    TabsRoutingDynamicallyComponent,
+    FirstComponentComponent,
+    SecondComponentComponent,
+    ThirdComponentComponent
   ],
   imports: [
     BrowserModule,

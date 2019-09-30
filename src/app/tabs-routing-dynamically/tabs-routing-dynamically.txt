@@ -1,0 +1,17 @@
+
+
+routing tabs with different path dynamically using angular material
+
+step1: create an array, which consists of 
+- label name
+- index's
+- path or link
+
+step2: Create three components where you need to do routing on these components
+- first-component
+- second-component
+- third-component
+
+step3: add these components in routing with path and component name
+
+Note: <router-app></router-app> should be there in order to route the tabs dynamically.
